@@ -16,5 +16,7 @@ public class RapidoidRunner {
         Rapidoid.run(args);
 
         On.get("/showUri").json(Req::uri);
+
+        On.get("/test").json("Hi!");
     }
 }
