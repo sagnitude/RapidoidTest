@@ -1,6 +1,5 @@
 package org.test;
 
-import org.rapidoid.http.Req;
 import org.rapidoid.setup.On;
 import org.rapidoid.web.Rapidoid;
 
@@ -15,7 +14,8 @@ public class RapidoidRunner {
 
         Rapidoid.run(args);
 
-        On.get("/showUri").json(Req::uri);
+        On.get("/failed").json(Response::failed);
+        On.get("/success").json(Response::success);
 
         On.get("/test").json("Hi!");
     }
