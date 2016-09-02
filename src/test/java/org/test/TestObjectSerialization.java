@@ -9,10 +9,10 @@ public class TestObjectSerialization extends TestBase {
 
     @Test
     public void testJackjsonObject() {
-        profile(() -> {
-            renderJson.renderJson(new Response(new Response("").asMap()).asMap(), nullOutput);
-            return null;
-        });
+//        profile(() -> {
+//            renderJson.renderJson(new Response(new Response("").asMap()).asMap(), nullOutput);
+//            return null;
+//        });
     }
 
     @Test
