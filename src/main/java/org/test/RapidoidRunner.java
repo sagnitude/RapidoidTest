@@ -1,8 +1,6 @@
 package org.test;
 
-import org.rapidoid.setup.App;
 import org.rapidoid.setup.On;
-import org.rapidoid.web.Rapidoid;
 
 /**
  * Created by sagnitude on 5/13/2016.
@@ -10,6 +8,7 @@ import org.rapidoid.web.Rapidoid;
 public class RapidoidRunner {
 
     public static void main(String[] args) {
-        App.bootstrap().adminCenter();
+        On.port(8888);
+        On.get("/size").json((String msg) -> msg.length());
     }
 }

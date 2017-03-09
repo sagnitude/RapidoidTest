@@ -1,10 +1,12 @@
 package org.test;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
  * Created by sagnitude on 2016/6/3.
  */
+@Ignore
 public class TestSerialization extends TestBase {
 
     @Test
